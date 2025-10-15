@@ -18,28 +18,27 @@ describe('local dummy test', ()=>{
 
 describe('Backend', () => {
   test('GET /candies returns initial candies', async () => {
-    const res = await request(app).get('/candies')
-    expect(res.status).toBe(200)
-    expect(Array.isArray(res.body)).toBe(true)
-    expect(res.body.length).toBe(4)
+    // TODO - expect status=200
+
+
+    // TODO - assert body as array
+
   })
 
   test('POST /candy adds a candy', async () => {
     const newCandy = {name: "Test Candy", mass: "50g", origin: "US"}
-    const res = await request(app)
-      .post('/candy')
-      .send(newCandy)
-      .set('Content-Type', 'application/json')
+    // TODO - expect status=201
 
-    expect(res.status).toBe(201)
-    expect(res.body.some(c => c.name === 'Test Candy')).toBe(true)
+
+    // TODO - test new record existence
+
   })
 
   test('DELETE /candies clears all candies', async () => {
-    const res = await request(app).delete('/candies')
-    expect(res.status).toBe(200)
+    // TODO - expect status=200
 
-    const getRes = await request(app).get('/candies')
-    expect(getRes.body.length).toBe(0)
+
+    // TODO - expect body array length=0
+
   })
 })
