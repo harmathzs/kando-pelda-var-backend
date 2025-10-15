@@ -14,27 +14,28 @@ describe('local dummy test', () => {
 
 describe('Candy', () => {
   test('renders candy details', () => {
-    render(<Candy name="TestCandy" mass="100g" origin="HU" />)
-    expect(screen.getByText(/TestCandy/i)).toBeInTheDocument()
-    expect(screen.getByText(/100g/i)).toBeInTheDocument()
-    expect(screen.getByText(/HU/i)).toBeInTheDocument()
+    const candy = <Candy name="TestCandy" mass="100g" origin="HU" />
+    // TODO - render candy
+
+    // TODO - assert name, mass, origin
+
   })
 })
 
 describe('App', () => {
   test('renders App heading', () => {
-    render(<App />)
-    const heading = screen.getByRole('heading', { name: /Candies/i, level: 1 })
-    expect(heading).toBeInTheDocument()
+    // TODO - render App
+
+    // TODO - test heading
+
   })
 
   test('allows user to add a new candy', async () => {
-    render(<App />)
-    await userEvent.type(screen.getByPlaceholderText(/Candy name/i), 'New Candy')
-    await userEvent.type(screen.getByPlaceholderText(/e.g. 100g/i), '150g')
-    await userEvent.type(screen.getByPlaceholderText(/Country code/i), 'US')
-    await userEvent.click(screen.getByRole('button', {name: /Add Candy/i}))
+    // TODO - render App
 
-    // Add assertions for expected behavior after form submit
+    // TODO - test typing into input fields: New Candy, 150g, US
+
+    // TODO - assert Add Candy button click
+
   })  
 })
