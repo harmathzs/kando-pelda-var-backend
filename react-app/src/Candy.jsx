@@ -1,3 +1,4 @@
+/* Candy.jsx */
 const Candy = ({name, mass, origin}) => (
     <div>
         <p><strong>Name:</strong> {name}</p>

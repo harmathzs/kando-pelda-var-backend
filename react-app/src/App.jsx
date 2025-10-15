@@ -1,3 +1,5 @@
+/* App.jsx */
+
 import React from 'react'
 import Candy from './Candy'
 import './App.css'
