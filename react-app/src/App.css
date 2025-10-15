@@ -40,3 +40,75 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.data-section {
+  flex: 2 1 600px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.controls-section {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+.add-candy-form {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.add-candy-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.add-candy-form input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.add-candy-form button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-candy-form button:hover {
+  background-color: #4cae4c;
+}
