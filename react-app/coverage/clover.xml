@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1760555304977" clover="3.2.0">
-  <project timestamp="1760555304977" name="All files">
+<coverage generated="1760555442790" clover="3.2.0">
+  <project timestamp="1760555442790" name="All files">
     <metrics statements="37" coveredstatements="35" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0" elements="41" coveredelements="38" complexity="0" loc="37" ncloc="37" packages="1" files="1" classes="1"/>
     <file name="express.cjs" path="C:\Users\User\Documents\ReactProjects\kando-pelda-var-backend\react-app\src\backend\express.cjs">
       <metrics statements="37" coveredstatements="35" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
