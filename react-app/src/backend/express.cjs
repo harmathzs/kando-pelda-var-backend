@@ -28,4 +28,10 @@ app.delete('/candies', (req, res)=>{
     res.sendStatus(200)
 })
 
-app.listen(3000, ()=>console.log('backend runs'))
+// Export the app for testing
+module.exports = app
+
+// Only start server if this is the main module (not when testing)
+if (require.main === module) {
+  app.listen(3000, () => console.log('backend runs'))
+}
