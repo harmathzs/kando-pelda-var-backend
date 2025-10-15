@@ -14,13 +14,13 @@ export default class App extends React.Component {
     this.setState({candies})
   }
 
-  componentDidMount() {
-    this.fetchCandies()
+  async componentDidMount() {
+    await this.fetchCandies()
   }
 
   handleDeleteAll = async (e) => {
     await fetch('http://localhost:3000/candies', {method: 'DELETE'})
-    this.fetchCandies()
+    await this.fetchCandies()
   }
 
   render() {
