@@ -7,5 +7,11 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,      // enables globally available expect, describe, test, etc.
+
+    coverage: {
+      provider: 'istanbul',
+      reporter: ['text', 'html', 'lcov'],
+      reportsDirectory: './coverage',
+    },
   }
 })
